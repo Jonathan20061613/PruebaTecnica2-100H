@@ -3,7 +3,7 @@ import { userModel } from '../models/users.model.js';
 import bcrypt from 'bcryptjs';
 
 // Peticiones
-export const getUser = async (request, response) => {
+export const postUser = async (request, response) => {
     try {
         const { fullName, email, password, role } = request.body
         const codePassword = await bcrypt.hash(password, 10);
@@ -28,7 +28,7 @@ export const getUser = async (request, response) => {
     }
 }
 
-export const postUser = async (request, response) => {
+export const getUser = async (request, response) => {
     try {
         let users = await userModel.find();
 
