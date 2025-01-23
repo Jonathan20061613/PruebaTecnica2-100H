@@ -4,6 +4,9 @@ import { Departamento } from "../models/departamentos.models.js";
 export const obtenerDepartamentos = async (req, res) => {
     try {
         const departamentos = await Departamento.find();
+        if (departamentos.length === 0) {
+            return res.status(404).json({ message: 'No hay departamentos almacenados' });
+        }
         res.status(200).json(departamentos);
     } catch (error) {
         res.status(500).json({ message: 'Error al obtener departamentos', error });

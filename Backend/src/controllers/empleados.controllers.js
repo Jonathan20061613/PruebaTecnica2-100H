@@ -4,6 +4,9 @@ import { Empleado } from "../models/empleados.models.js";
 export const obtenerEmpleados = async (req, res) => {
     try {
         const empleados = await Empleado.find();
+        if (empleados.length === 0) {
+            return res.status(404).json({ message: 'No hay empleados almacenados' });
+        }
         res.status(200).json(empleados);
     } catch (error) {
         res.status(500).json({ message: 'Error al obtener empleados', error });
