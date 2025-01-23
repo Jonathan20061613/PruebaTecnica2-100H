@@ -73,16 +73,3 @@ Actualmente, el proyecto está en la fase de desarrollo, con avances en:
 - **Frontend:** Interfaz en Angular con formularios básicos y componentes visuales.
 - **Conexión a la base de datos:** Integración con MongoDB para gestionar los datos de empleados y departamentos.
 
-### **Próximos pasos:**
-1. Mejorar el diseño de la interfaz para mayor usabilidad.
-2. Implementar validaciones avanzadas en formularios.
-3. Optimizar las consultas para mejorar el rendimiento.
-
----
-
-## 🚀 **Cómo Ejecutar el Proyecto**
-
-1. **Clona el repositorio:**
-   ```bash
-   git clone https://github.com/tu-usuario/gestion-empleados.git
-   cd gestion-empleados
