@@ -1,73 +1,88 @@
-# 🚀 **Prueba Técnica: Autenticación de Usuarios** 🚀
+# 🌟 Gestión de Empleados y Departamentos 🌟
 
-## **¡Bienvenido a la Solución Completa de Autenticación!** 
-
-Imagina un sistema de registro e inicio de sesión de usuarios en el que la seguridad y la eficiencia van de la mano. Este proyecto implementa un **sistema de autenticación de usuarios** usando **Node.js**, **Express**, **MongoDB**, **Angular** y **JWT**. ¡Acompáñame a conocer cómo se orquesta esta maravilla de la tecnología!
+**Tecnología y Servicios Digitales** te presenta una aplicación web diseñada para optimizar la gestión de empleados y departamentos en empresas pequeñas y medianas. 💼✨
 
 ---
 
-## 🔧 **Tecnologías Utilizadas** 🔧
-
-### **Backend (Servidor)** 🌐:
-- **Node.js** + **Express**: Creación de una **API RESTful** poderosa y flexible que maneja todos los datos de los usuarios.
-- **MongoDB**: Base de datos no relacional que almacena de manera eficiente y segura los datos de los usuarios.
-- **JWT (JSON Web Tokens)**: La clave de la autenticación, proporcionando seguridad y control en cada interacción.
-
-### **Frontend (Interfaz de Usuario)** 🎨:
-- **Angular**: La tecnología de frontend que transforma la experiencia de usuario con interfaces dinámicas y reactivas.
-- **Bootstrap**: Garantizando que la interfaz sea **responsiva** y se vea increíble en cualquier dispositivo.
-
----
-
-## 🌍 **¡El Flujo del Proyecto!** 🌍
-
-### **1️⃣ Backend: Node.js + Express**
-Tu viaje comienza en el servidor, donde una **API RESTful** maneja las operaciones CRUD de los usuarios. ¿Qué puedes hacer aquí? 
-
-- **Registrar** nuevos usuarios con su **nombre**, **correo electrónico** y **contraseña**.
-- **Leer** la información de los usuarios existentes.
-- **Actualizar** cualquier dato de los usuarios registrados.
-- **Eliminar** cuentas que ya no sean necesarias.
-
-Y lo mejor de todo, **¡todo con autenticación segura!** 🛡️
-
-Usamos **JWT (JSON Web Tokens)** para garantizar que solo los usuarios autenticados tengan acceso a las funciones protegidas. Imagina que, con solo un login exitoso, obtienes un **token de seguridad** que valida tu identidad a lo largo de toda la sesión. ¡Como tener una llave maestra para acceder a todas tus funciones sin tener que iniciar sesión una y otra vez! 🔑
-
-### **2️⃣ Frontend: Angular**
-¡La magia continúa en el frontend! Con **Angular**, los usuarios pueden interactuar con una **interfaz amigable**, donde lo siguiente es posible:
-
-- **Registrarse** de manera sencilla con solo ingresar su **nombre**, **correo electrónico** y **contraseña**. 
-- **Iniciar sesión** para acceder a su cuenta usando las credenciales previamente registradas.
-
-El diseño de la interfaz se asegura de que se vea impresionante en cualquier dispositivo gracias a **Bootstrap**. Así, los usuarios disfrutan de una experiencia fluida y **responsiva**. 📱💻
+## 📋 **Tabla de Contenidos**
+- [Descripción del Proyecto](#descripción-del-proyecto)
+- [Objetivos Principales](#objetivos-principales)
+- [Funcionalidades Clave](#funcionalidades-clave)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Estado del Proyecto](#estado-del-proyecto)
+- [Cómo Ejecutar el Proyecto](#cómo-ejecutar-el-proyecto)
+- [Contribuciones](#contribuciones)
+- [Contacto](#contacto)
 
 ---
 
-## 🧑‍💻 **¿Cómo Funciona el Sistema?** 🧑‍💻
+## 🎯 **Descripción del Proyecto**
 
-1. **Registro de Usuarios**:
-   - **¿Nuevo en la plataforma?** ¡No te preocupes! Simplemente crea tu cuenta proporcionando **nombre completo**, **correo electrónico** y **contraseña**. 
-   - Para mantener tu información segura, **la contraseña se cifra** con **bcrypt** antes de ser almacenada en nuestra base de datos.
+Esta aplicación busca centralizar y simplificar la gestión de recursos humanos mediante una interfaz intuitiva y funciones avanzadas. Proporciona herramientas para:
+- **Administrar empleados:** registro, consulta, actualización y eliminación.
+- **Gestionar departamentos:** asignar empleados y mantener un registro claro.
+- **Visualizar relaciones internas:** muestra qué empleados pertenecen a qué departamento.
 
-2. **Inicio de Sesión**:
-   - **¿Ya tienes cuenta?** Solo ingresa tu **correo** y **contraseña**.
-   - Si todo es correcto, el sistema genera un **JSON Web Token (JWT)** que es tu pase para realizar peticiones al backend sin tener que loguearte cada vez.
-
-3. **Operaciones CRUD**:
-   - El sistema permite hacer **actualizaciones** o **eliminaciones** de datos, pero solo si estás autenticado con un **JWT válido**. ¡La seguridad primero!
+Diseñada pensando en la escalabilidad y usabilidad, esta herramienta es ideal para empresas que buscan optimizar su organización interna.
 
 ---
 
-## 🔒 **¿Por Qué Elegir Este Sistema?** 🔒
+## 🥅 **Objetivos Principales**
 
-Este proyecto no es solo un backend y un frontend cualquiera. Está diseñado para proporcionar una **solución robusta y segura** en la gestión de usuarios. La implementación de **JWT** garantiza que solo los usuarios autenticados puedan acceder a funciones sensibles, protegiendo la integridad de los datos en todo momento.
+- Digitalizar y optimizar la gestión interna de la empresa.
+- Facilitar la comunicación entre departamentos y empleados.
+- Proporcionar una base para futuras integraciones con otros sistemas.
 
-Además, la integración de **MongoDB** asegura que nuestros datos se almacenan de forma escalable y eficiente, mientras que **Angular** brinda una interfaz moderna que adapta su diseño a todo tipo de dispositivos.
+---
+
+## 🌟 **Funcionalidades Clave**
+
+### **Gestión de Empleados**
+- Registro de nuevos empleados con datos relevantes como nombre, apellidos, cargo, y departamento.
+- Actualización de información personal y laboral.
+- Eliminación de registros obsoletos.
+
+### **Gestión de Departamentos**
+- Creación y modificación de departamentos según la estructura organizativa.
+- Asignación de empleados a departamentos específicos.
+- Visualización del número y lista de empleados por departamento.
+
+### **Interfaz de Usuario**
+- Diseño responsivo para diferentes dispositivos.
+- Formularios intuitivos para la gestión de datos.
+- Visualización clara de la jerarquía y organización.
 
 ---
 
-## 🌟 **Resumen Final** 🌟
+## 🛠️ **Tecnologías Utilizadas**
 
-Este proyecto demuestra cómo la combinación de **Node.js**, **Express**, **MongoDB**, **Angular** y **JWT** puede crear una **solución de autenticación moderna, segura y eficiente**. Ideal para cualquier plataforma que necesite un sistema confiable y fácil de usar para gestionar usuarios. ¡La autenticación nunca fue tan simple y segura! 🚀
+| Tecnología       | Propósito                          |
+|------------------|------------------------------------|
+| **Node.js**      | Backend y servidor                |
+| **Express.js**   | API RESTful                       |
+| **MongoDB**      | Base de datos                     |
+| **Angular**      | Frontend e interfaz de usuario    |
+| **Bootstrap**    | Diseño y estilización             |
 
 ---
+
+## 🚧 **Estado del Proyecto**
+
+Actualmente, el proyecto está en la fase de desarrollo, con avances en:
+- **Backend:** API funcional para operaciones CRUD.
+- **Frontend:** Interfaz en Angular con formularios básicos y componentes visuales.
+- **Conexión a la base de datos:** Integración con MongoDB para gestionar los datos de empleados y departamentos.
+
+### **Próximos pasos:**
+1. Mejorar el diseño de la interfaz para mayor usabilidad.
+2. Implementar validaciones avanzadas en formularios.
+3. Optimizar las consultas para mejorar el rendimiento.
+
+---
+
+## 🚀 **Cómo Ejecutar el Proyecto**
+
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/tu-usuario/gestion-empleados.git
+   cd gestion-empleados
